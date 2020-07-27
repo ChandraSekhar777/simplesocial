@@ -24,7 +24,7 @@ TEMPLATE_DIR = os.path.join(BASE_DIR,"templates")
 #SECRET_KEY = '*wba4k^$d=w$(0+jb_49p4n3$!qj%6%+ma=yt#+09mbkgqxcjh'
 SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = (os.environ.get('DEBUG_VALUE')=='True')
 
 ALLOWED_HOSTS = ['instafacebook.herokuapp.com']
 
@@ -111,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
