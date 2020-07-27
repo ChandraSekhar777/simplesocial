@@ -20,12 +20,12 @@ TEMPLATE_DIR = os.path.join(BASE_DIR,"templates")
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '*wba4k^$d=w$(0+jb_49p4n3$!qj%6%+ma=yt#+09mbkgqxcjh'
-
+#SECRET_KEY = '*wba4k^$d=w$(0+jb_49p4n3$!qj%6%+ma=yt#+09mbkgqxcjh'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['instafacebook.herokuapp.com']
 
 
 # Application definition
